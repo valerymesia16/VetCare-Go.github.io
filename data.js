@@ -36,7 +36,7 @@ VC.data = {
       id: 'rodrigo-silva', name: 'Dr. Rodrigo Silva', initials: 'RS',
       serviceId: 'general', specialty: 'Medicina general', title: 'Medicina veterinaria general',
       rating: 4.9, reviews: 86, price: 80, zones: ['San Isidro', 'Miraflores'],
-      photo: 'img/vets/rodrigo.jpg',
+      photo: 'img/vets/rodrigo.png',
       bio: 'Más de 8 años atendiendo perros y gatos. Prefiere explicar cada paso del tratamiento con calma para que la familia se sienta tranquila.',
       slots: {
         0: ['3:00 p. m.', '4:30 p. m.', '6:00 p. m.'],
@@ -53,7 +53,7 @@ VC.data = {
       id: 'jorge-cruz', name: 'Dr. Jorge Cruz', initials: 'JC',
       serviceId: 'emergencias', specialty: 'Emergencias', title: 'Medicina veterinaria de emergencias',
       rating: 4.7, reviews: 39, price: 95, zones: ['San Isidro'],
-      photo: 'img/vets/jorge.jpg',
+      photo: 'img/vets/jorge.png',
       bio: 'Especialista en urgencias y cuidados críticos. Lleva equipo portátil para estabilizar a tu mascota en casa antes de cualquier traslado.',
       slots: {
         0: ['5:30 p. m.', '7:00 p. m.'],
@@ -69,7 +69,7 @@ VC.data = {
       id: 'milagros-paz', name: 'Dra. Milagros Paz', initials: 'MP',
       serviceId: 'vacunacion', specialty: 'Vacunación', title: 'Medicina veterinaria preventiva',
       rating: 4.8, reviews: 54, price: 75, zones: ['San Isidro', 'Miraflores'],
-      photo: 'img/vets/milagros.jpg',
+      photo: 'img/vets/milagros.png',
       bio: 'Se especializa en planes de vacunación y medicina preventiva para cachorros y adultos. Muy paciente con mascotas tímidas.',
       slots: {
         0: ['6:30 p. m.'],
