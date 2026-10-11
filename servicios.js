@@ -25,3 +25,4 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('faq').innerHTML = faqs.map(f =>
     `<details><summary>${VC.esc(f.q)}</summary><p>${VC.esc(f.a)}</p></details>`).join('');
 });
+
