@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ingresar · VetCare Go</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-nav="">
+  <header id="app-header"></header>
+
+  <main>
+    <div class="container">
+      <div class="auth-wrap">
+        <div class="card auth-card">
+          <div class="auth-tabs" role="tablist">
+            <button role="tab" id="tab-login" aria-selected="true" aria-controls="form-login">Ingresar</button>
+            <button role="tab" id="tab-registro" aria-selected="false" aria-controls="form-registro">Crear cuenta</button>
+          </div>
+
+          <!-- Ingresar -->
+          <form id="form-login" novalidate>
+            <div><h1>Bienvenido de vuelta</h1><p class="sub">Ingresa para ver y gestionar tus reservas.</p></div>
+            <label class="field" data-f="l-email"><span class="label">Correo electrónico</span>
+              <input id="l-email" type="email" autocomplete="email" placeholder="tucorreo@ejemplo.com"><span class="err"></span></label>
+            <label class="field" data-f="l-pass"><span class="label">Contraseña</span>
+              <div class="pw-wrap"><input id="l-pass" type="password" autocomplete="current-password" placeholder="Tu contraseña"><button type="button" data-toggle="l-pass">Ver</button></div>
+              <span class="err"></span></label>
+            <button class="btn btn-primary btn-block btn-lg" type="submit">Ingresar</button>
+            <p class="demo-link">¿Solo quieres probar? <button type="button" id="demo-btn">Usar cuenta demo</button></p>
+          </form>
+
+          <!-- Crear cuenta -->
+          <form id="form-registro" novalidate hidden>
+            <div><h1>Crea tu cuenta</h1><p class="sub">Obtén 50% de descuento en tu primera reserva.</p></div>
+            <label class="field" data-f="r-name"><span class="label">Nombre completo</span>
+              <input id="r-name" type="text" autocomplete="name" placeholder="Tu nombre"><span class="err"></span></label>
+            <label class="field" data-f="r-email"><span class="label">Correo electrónico</span>
+              <input id="r-email" type="email" autocomplete="email" placeholder="tucorreo@ejemplo.com"><span class="err"></span></label>
+            <label class="field" data-f="r-pass"><span class="label">Contraseña (mínimo 6 caracteres)</span>
+              <div class="pw-wrap"><input id="r-pass" type="password" autocomplete="new-password" placeholder="Crea una contraseña"><button type="button" data-toggle="r-pass">Ver</button></div>
+              <span class="err"></span></label>
+            <button class="btn btn-accent btn-block btn-lg" type="submit">Crear cuenta</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="app-footer"></footer>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/ingresar.js"></script>
+</body>
+</html>

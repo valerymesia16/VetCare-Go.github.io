@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VetCare Go · Tu veterinario, a la puerta de tu casa</title>
+  <meta name="description" content="Reserva, paga y recibe atención veterinaria a domicilio en San Isidro y Miraflores.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body data-nav="inicio">
+  <header id="app-header"></header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="badge">Atención a domicilio en San Isidro y Miraflores</span>
+          <h1>Tu veterinario, a la puerta de tu casa</h1>
+          <p class="lead">Reserva, paga y recibe atención sin estresar a tu mascota. Ves el precio final antes de confirmar.</p>
+
+          <form class="search-card" id="search-form" aria-label="Buscar veterinario">
+            <div><label for="f-service">Servicio</label><select id="f-service"></select></div>
+            <div><label for="f-zone">Zona</label><select id="f-zone"></select></div>
+            <div><label for="f-date">Fecha</label>
+              <select id="f-date"><option value="hoy">Hoy</option><option value="semana">Esta semana</option></select></div>
+            <button class="btn btn-primary" type="submit">Buscar</button>
+          </form>
+
+          <div class="trust"><span>Colegiatura verificada</span><span>Pago seguro</span><span>Sin costos ocultos</span></div>
+        </div>
+        <div class="hero-media">
+        <img src="img/vets/hero.jpg.png" alt="Veterinario atendiendo a un perro en casa" onerror="this.remove()">
+           
+        </div>
+      </div>
+    </section>
+
+    <!-- Cómo funciona -->
+    <section class="section section-white" id="como-funciona">
+      <div class="container">
+        <h2 class="reveal">Cómo funciona</h2>
+        <div class="steps">
+          <div class="step reveal"><div class="num">1</div><h3>Elige a tu veterinario</h3><p>Compara calificaciones, zona y precio.</p></div>
+          <div class="step reveal"><div class="num">2</div><h3>Reserva día y hora</h3><p>Confirma con el precio final a la vista.</p></div>
+          <div class="step reveal"><div class="num">3</div><h3>Recibe atención en casa</h3><p>Paga con Yape, Plin o tarjeta.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <h2 class="reveal">Servicios</h2>
+        <div class="grid-3" id="home-services"></div>
+        <p style="margin-top:18px"><a class="btn btn-ghost" href="servicios.html">Ver todos los servicios →</a></p>
+      </div>
+    </section>
+
+    <!-- Promo -->
+    <section class="container reveal" style="margin-bottom:64px">
+      <div class="promo">
+        <div>
+          <h2>50% en tu primera reserva</h2>
+          <p>Crea tu cuenta y aplica el descuento al reservar.</p>
+        </div>
+        <a class="btn btn-accent" id="promo-btn" href="ingresar.html?tab=registro">Crear cuenta</a>
+      </div>
+    </section>
+
+    <!-- Reseñas -->
+    <section class="container" style="padding-bottom:64px">
+      <h2 class="reveal" style="font-size:1.6rem;margin-bottom:22px">¿Tuviste una buena experiencia?</h2>
+      <div class="grid-3" id="home-reviews"></div>
+      <div class="pay-row"><span>Paga fácil y rápido:</span>
+        <span class="pill">Yape</span><span class="pill">Plin</span><span class="pill">BCP</span><span class="pill">Tarjeta de crédito/débito</span>
+      </div>
+    </section>
+  </main>
+
+  <footer id="app-footer"></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

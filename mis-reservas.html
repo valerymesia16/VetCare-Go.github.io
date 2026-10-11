@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mis reservas · VetCare Go</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-nav="reservas">
+  <header id="app-header"></header>
+
+  <main>
+    <div class="container page-head">
+      <h1 class="page-title">Mis reservas</h1>
+      <p class="page-sub" id="res-sub">Revisa el estado de tus atenciones y pagos.</p>
+      <div class="chip-row" id="res-filters" style="margin-top:18px">
+        <button class="chip" data-value="todas" aria-pressed="true">Todas</button>
+        <button class="chip" data-value="pendiente" aria-pressed="false">Pendientes</button>
+        <button class="chip" data-value="confirmada" aria-pressed="false">Confirmadas</button>
+        <button class="chip" data-value="cancelado" aria-pressed="false">Pago cancelado</button>
+      </div>
+    </div>
+    <div class="container"><div class="res-list" id="res-list"></div></div>
+  </main>
+
+  <footer id="app-footer"></footer>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/reservas.js"></script>
+</body>
+</html>

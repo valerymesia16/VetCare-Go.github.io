@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Veterinarios disponibles · VetCare Go</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-nav="veterinarios">
+  <header id="app-header"></header>
+
+  <main>
+    <div class="container page-head">
+      <a class="back-link" href="index.html">← Volver al inicio</a>
+      <h1 class="page-title" id="vets-title" aria-live="polite">Veterinarios disponibles</h1>
+      <p class="page-sub" id="vets-sub"></p>
+    </div>
+
+    <div class="container vets-layout">
+      <aside class="filters" aria-label="Filtros">
+        <h4>Fecha</h4>
+        <div class="chip-row" data-group="fecha">
+          <button class="chip" data-value="hoy" aria-pressed="false">Hoy</button>
+          <button class="chip" data-value="semana" aria-pressed="false">Esta semana</button>
+        </div>
+        <h4>Zona</h4>
+        <div class="chip-row" data-group="zona">
+          <button class="chip" data-value="San Isidro" aria-pressed="false">San Isidro</button>
+          <button class="chip" data-value="Miraflores" aria-pressed="false">Miraflores</button>
+        </div>
+        <h4>Ordenar por</h4>
+        <div class="chip-row" data-group="orden">
+          <button class="chip" data-value="rating" aria-pressed="false">Mejor calificación</button>
+          <button class="chip" data-value="precio" aria-pressed="false">Precio</button>
+        </div>
+      </aside>
+
+      <section class="vet-list" id="vet-list" aria-label="Lista de veterinarios"></section>
+    </div>
+  </main>
+
+  <footer id="app-footer"></footer>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/veterinarios.js"></script>
+</body>
+</html>
