@@ -29,23 +29,29 @@
 
           <form class="search-card" id="search-form" aria-label="Buscar veterinario">
   <div>
-    <label for="f-service">Servicio</label>
-    <select id="f-service" required></select>
-  </div>
-  <div>
-    <label for="f-zone">Zona</label>
-    <select id="f-zone" required></select>
-  </div>
-  <div>
-    <label for="f-date">Fecha</label>
-    <select id="f-date" required>
-      <option value="" disabled selected>Selecciona una fecha</option>
-      <option value="hoy">Hoy</option>
-      <option value="semana">Esta semana</option>
-    </select>
-  </div>
-  <button class="btn btn-primary" type="submit">Buscar</button>
-</form>
+  <label for="f-service">Servicio</label>
+  <select id="f-service" required>
+    <option value="" disabled selected>Selecciona un servicio</option>
+  </select>
+</div>
+
+<div>
+  <label for="f-zone">Zona</label>
+  <select id="f-zone" required>
+    <option value="" disabled selected>Selecciona una zona</option>
+  </select>
+</div>
+
+<div>
+  <label for="f-date">Fecha</label>
+  <select id="f-date" required>
+    <option value="" disabled selected>Selecciona una fecha</option>
+    <option value="hoy">Hoy</option>
+    <option value="semana">Esta semana</option>
+  </select>
+</div>
+
+<button class="btn btn-primary" type="submit">Buscar</button>
           <div class="trust"><span>Colegiatura verificada</span><span>Pago seguro</span><span>Sin costos ocultos</span></div>
         </div>
         <div class="hero-media">
