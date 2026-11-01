@@ -7,8 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const selZone = document.getElementById('f-zone');
   const selDate = document.getElementById('f-date');
 
-  selService.innerHTML = services.map(s => `<option value="${s.id}">${VC.esc(s.name)}</option>`).join('');
-  selZone.innerHTML = zones.map(z => `<option>${VC.esc(z)}</option>`).join('');
+selService.innerHTML = '<option value="" selected disabled>Selecciona un servicio</option>' +
+  services.map(s => `<option value="${s.id}">${VC.esc(s.name)}</option>`).join('');
+
+selZone.innerHTML = '<option value="" selected disabled>Selecciona una zona</option>' +
+  zones.map(z => `<option>${VC.esc(z)}</option>`).join('');
   if (saved.serviceId) selService.value = saved.serviceId;
   if (saved.zone) selZone.value = saved.zone;
   if (saved.fecha) selDate.value = saved.fecha;
