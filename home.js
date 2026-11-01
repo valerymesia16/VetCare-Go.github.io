@@ -12,10 +12,9 @@ selService.innerHTML = '<option value="" selected disabled>Selecciona un servici
 
 selZone.innerHTML = '<option value="" selected disabled>Selecciona una zona</option>' +
   zones.map(z => `<option>${VC.esc(z)}</option>`).join('');
-  if (saved.serviceId) selService.value = saved.serviceId;
-  if (saved.zone) selZone.value = saved.zone;
-  if (saved.fecha) selDate.value = saved.fecha;
-
+ selService.selectedIndex = 0;
+selZone.selectedIndex = 0;
+selDate.selectedIndex = 0;
   document.getElementById('search-form').addEventListener('submit', e => {
     e.preventDefault();
     VC.store.set('search', { serviceId: selService.value, zone: selZone.value, fecha: selDate.value });
