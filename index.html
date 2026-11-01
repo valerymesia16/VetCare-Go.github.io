@@ -28,13 +28,24 @@
           <p class="lead">Reserva, paga y recibe atención sin estresar a tu mascota. Ves el precio final antes de confirmar.</p>
 
           <form class="search-card" id="search-form" aria-label="Buscar veterinario">
-            <div><label for="f-service">Servicio</label><select id="f-service"></select></div>
-            <div><label for="f-zone">Zona</label><select id="f-zone"></select></div>
-            <div><label for="f-date">Fecha</label>
-              <select id="f-date"><option value="hoy">Hoy</option><option value="semana">Esta semana</option></select></div>
-            <button class="btn btn-primary" type="submit">Buscar</button>
-          </form>
-
+  <div>
+    <label for="f-service">Servicio</label>
+    <select id="f-service" required></select>
+  </div>
+  <div>
+    <label for="f-zone">Zona</label>
+    <select id="f-zone" required></select>
+  </div>
+  <div>
+    <label for="f-date">Fecha</label>
+    <select id="f-date" required>
+      <option value="" disabled selected>Selecciona una fecha</option>
+      <option value="hoy">Hoy</option>
+      <option value="semana">Esta semana</option>
+    </select>
+  </div>
+  <button class="btn btn-primary" type="submit">Buscar</button>
+</form>
           <div class="trust"><span>Colegiatura verificada</span><span>Pago seguro</span><span>Sin costos ocultos</span></div>
         </div>
         <div class="hero-media">
